@@ -54,7 +54,7 @@ cohere_api_token = "{API KEY}"
 4- Running the streamlit demo
 Try the demo by running the Streamlit app
 
-```streamlit run front-end.py```
+```streamlit run route-generation/front_end.py```
 
 # Get support
 If you have any questions or comments, please file an issue or reach out to us on [Discord](https://discord.gg/co-mmunity).
