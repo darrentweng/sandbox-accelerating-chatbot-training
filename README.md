@@ -31,7 +31,7 @@ Modern chatbots typically need a combination of intents/routes and associated tr
 These example phrases can be used with embeddings to map incoming messages from users based on similarity, or used in downstream chatbots as additional training data.
 
 # How it works
-Once a user passes in a few route descriptions, the Cohere generate endpoint is used to create some example messages relating to that description. Once all of the examples have been created, Cohere embed is used to get representations of those examples. By clustering those representations and comparing incoming messages to its nearest neigbors, new messages can be assigned to a route.
+Once a user passes in a few route descriptions, the Cohere generate endpoint is used to create some example messages relating to that description. Once all of the examples have been created, Cohere embed is used to get representations of those examples. By clustering those representations and comparing incoming messages to its nearest neighbors, new messages can be assigned to a route.
 
 ![how-it-works](https://user-images.githubusercontent.com/108292383/199025318-dc3a7f3b-bb6f-4cb4-ba9a-c1b247fee43b.png)
 
@@ -42,11 +42,11 @@ To deploy this app <yourself>, you will need an API key.  Sign up to get a free 
 
 1- Clone the repository.
 
-2- Install all the dependancies:
+2- Install all the dependencies:
 
 ```pip install -r requirements.txt```
 
-3- Create a secrets.toml file to store api keys and put it in the .streamlit folder
+3- Create a `secrets.toml` file to store api keys and put it in the `.streamlit` folder
 ```
 cohere_api_token = "{API KEY}"
 ```
