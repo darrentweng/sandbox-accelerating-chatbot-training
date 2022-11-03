@@ -38,7 +38,7 @@ Once a user passes in a few route descriptions, the Cohere generate endpoint is 
 # Installation
 This repository uses Cohere’s large language models that allow complex generation, classification and representation of text; full documentation available at docs.cohere.ai
 
-To deploy this app <yourself>, you will need an API key.  Sign up to get a free non-production API key at cohere.ai
+To deploy this app <yourself>, you will need an API key.  Sign up to get a free non-production API key at [cohere.ai](https://dashboard.cohere.ai/welcome/register?utm_source=github&utm_medium=content&utm_campaign=sandbox&utm_content=routegeneration)
 
 1- Clone the repository.
 
