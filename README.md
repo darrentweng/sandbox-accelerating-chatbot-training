@@ -41,17 +41,19 @@ This repository uses Cohere’s large language models that allow complex generat
 To deploy this app <yourself>, you will need an API key.  Sign up to get a free non-production API key at [cohere.ai](https://dashboard.cohere.ai/welcome/register?utm_source=github&utm_medium=content&utm_campaign=sandbox&utm_content=routegeneration)
 
 1- Clone the repository.
+## Development with Docker
+Run the following commands to build the dev docker image and run the container that use local files throughout development process:
+```
+docker build -t routegeneration .
+docker run -p 8501:8501 -v %cd%:/home/streamlit routegeneration
+```
 
-2- Install all the dependencies:
-
-```pip install -r requirements.txt```
-
-3- Create a `secrets.toml` file to store api keys and put it in the `.streamlit` folder
+2- Create a `secrets.toml` file to store api keys and put it in the `.streamlit` folder
 ```
 cohere_api_token = "{API KEY}"
 ```
 
-4- Running the streamlit demo
+3- Running the streamlit demo
 Try the demo by running the Streamlit app
 
 ```streamlit run route-generation/front_end.py```
